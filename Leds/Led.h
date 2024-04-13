@@ -1,12 +1,14 @@
 #ifndef LED_H
 #define LED_H
-#include<Arduino.h>
+#include <Arduino.h>
 #include <sstream>
 using namespace std;
-class Led {
-  private:
-    int ledPin;
-  public:
+class Led
+{
+private:
+  int ledPin;
+
+public:
   Led();
   Led(int ledPin);
   void turnOn();

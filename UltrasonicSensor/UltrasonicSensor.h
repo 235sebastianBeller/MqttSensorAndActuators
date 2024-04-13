@@ -2,13 +2,15 @@
 #define ULTRASONICSENSOR_H
 #include <Arduino.h>
 
-class UltrasonicSensor {
+class UltrasonicSensor
+{
 private:
     byte triggerPin;
-    byte echoPin; 
+    byte echoPin;
+
 public:
-    UltrasonicSensor(byte triggerPin,byte echoPin);
-    long  readDistance();
+    UltrasonicSensor(byte triggerPin, byte echoPin);
+    long readDistance();
     int getTheShortestDistance(byte sampleSize);
     ~UltrasonicSensor();
 };
